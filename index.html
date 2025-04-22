@@ -3,28 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Directory Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Idaho Pro Services - Professional Service Directory</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
 </head>
-<body class="font-sans antialiased">
+<body>
+    
     <header class="fixed w-full bg-white/95 backdrop-blur-sm z-50 shadow-md">
         <nav class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <a href="/" class="text-2xl font-bold text-blue-600">Idaho Pro Services</a>
+                <a href="https://Vimly-ai.github.io/idaho-pro-services-2025-04-22-poqz8/" class="text-2xl font-bold text-blue-600">Idaho Pro Services</a>
                 <div class="hidden md:flex space-x-8">
                     <a href="#directory" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Directory</a>
                     <a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">About</a>
                     <a href="#contact" class="text-gray-600 hover:text-blue-600 transition-colors duration-300">Contact</a>
                 </div>
+                <button class="mobile-menu-button md:hidden" aria-label="Toggle menu">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            <div class="mobile-menu hidden md:hidden mt-4 bg-white rounded-lg shadow-lg absolute left-0 right-0 p-4">
+                <a href="#directory" class="block py-2 px-4 text-gray-600 hover:bg-blue-50 rounded">Directory</a>
+                <a href="#about" class="block py-2 px-4 text-gray-600 hover:bg-blue-50 rounded">About</a>
+                <a href="#contact" class="block py-2 px-4 text-gray-600 hover:bg-blue-50 rounded">Contact</a>
             </div>
         </nav>
     </header>
 
-    <section class="h-[50vh] bg-gradient-to-r from-blue-500 to-blue-700 flex items-center relative">
-        <div class="container mx-auto px-6 text-center text-white">
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">Idaho Pro Services</h1>
-            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">Idaho's Go-To Directory for Reliable Home & Business Service</p>
-            <a href="https://vimly.ai/" class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-opacity-90 transform hover:scale-105 transition duration-300 inline-block">Submit Your Listing</a>
+    <section class="h-[50vh] bg-gradient-to-r from-blue-500 to-blue-700 flex items-center relative bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1506974210756-8e1b8985d348?auto=format&fit=crop&w=2000'); background-blend-mode: overlay;">
+        <div class="container mx-auto px-6 text-center text-white relative z-10">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-shadow">Idaho Pro Services</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-shadow">Your Premier Directory for Trusted Home & Business Services in Idaho</p>
+            <a href="https://vimly.ai/" class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-opacity-90 transform hover:scale-105 transition duration-300 inline-block shadow-lg">Submit Your Listing</a>
+        </div>
+        <div class="absolute inset-0 bg-black opacity-40"></div>
+    </section>
+
+    
+
+    <section class="py-20 bg-blue-600">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-8">Ready to Join Our Directory?</h2>
+            <a href="https://vimly.ai/" class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-opacity-90 transform hover:scale-105 transition duration-300 inline-block shadow-lg">Submit Your Listing</a>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-8">About Us</h2>
+                <p class="text-gray-600 leading-relaxed">Welcome to Idaho Pro Services, your trusted source for finding reliable and professional service providers in Idaho. We carefully curate our directory to include only the most reputable businesses, ensuring that you have access to quality services for all your home and business needs. Our platform connects you with experienced professionals who are committed to delivering excellence in their respective fields.</p>
+            </div>
         </div>
     </section>
 
@@ -75,25 +110,7 @@
                 </div>
             </div>
         </div>
-    </section>
-
-    <section class="py-20 bg-blue-600">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold text-white mb-8">Ready to Join Our Directory?</h2>
-            <a href="https://vimly.ai/" class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-opacity-90 transform hover:scale-105 transition duration-300 inline-block">Submit Your Listing</a>
-        </div>
-    </section>
-
-    <section id="about" class="py-20 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="max-w-3xl mx-auto text-center">
-                <h2 class="text-3xl font-bold mb-8">About Us</h2>
-                <p class="text-gray-600 leading-relaxed">Welcome to Idaho Pro Services, your trusted source for finding reliable and professional service providers in Idaho. We carefully curate our directory to include only the most reputable businesses, ensuring that you have access to quality services for all your home and business needs. Our platform connects you with experienced professionals who are committed to delivering excellence in their respective fields.</p>
-            </div>
-        </div>
-    </section>
-
-    <footer class="bg-gray-800 text-white py-12">
+    </section><footer id="contact" class="bg-gray-800 text-white py-12">
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div>
@@ -103,9 +120,9 @@
                 <div>
                     <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
                     <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors duration-300">Privacy Policy</a></li>
-                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors duration-300">Terms of Service</a></li>
-                        <li><a href="#" class="text-gray-300 hover:text-white transition-colors duration-300">Blog</a></li>
+                        <li><a href="https://Vimly-ai.github.io/idaho-pro-services-2025-04-22-poqz8/privacy.html" class="text-gray-300 hover:text-white transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="https://Vimly-ai.github.io/idaho-pro-services-2025-04-22-poqz8/terms.html" class="text-gray-300 hover:text-white transition-colors duration-300">Terms of Service</a></li>
+                        <li><a href="https://Vimly-ai.github.io/idaho-pro-services-2025-04-22-poqz8/blog.html" class="text-gray-300 hover:text-white transition-colors duration-300">Blog</a></li>
                     </ul>
                 </div>
                 <div>
@@ -123,5 +140,36 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+            
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+
 </body>
 </html>
